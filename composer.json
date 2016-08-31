@@ -1,0 +1,11 @@
+{
+    "name": "menory/menory",
+    "description": "study and class libraries",
+    "authors": [
+        {
+            "name": "hhw",
+            "email": "hhw_menory@yeah.net"
+        }
+    ],
+    "require": {}
+}
