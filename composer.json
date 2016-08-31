@@ -12,9 +12,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Menory\\Common": "./Common",
-            "Menory\\Mvc": "./Mvc",
-            "Menory\\Network": "./Network"
+            "Menory\\Common\\": "./Common",
+            "Menory\\Mvc\\": "./Mvc",
+            "Menory\\Network\\": "./Network"
         }
     }
 }
