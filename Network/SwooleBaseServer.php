@@ -2,10 +2,26 @@
 namespace Menory\Network;
 
 
-class SwooleBaseServer
+class SwooleBaseServer 
 {
-	public function show()
-	{
-		echo "swoole_base_server";
-	}
+    protected $swooleConfig = [];
+    protected $serverConfig = [];
+
+    protected $callbackFunc;
+
+    public function setSwooleConfig(array $swooleConfig = [])
+    {
+        $this->swooleConfig = $swooleConfig;
+    }
+
+    public function setServerConfig(array $serverConfig = [])
+    {
+        $this->serverConfig = $serverConfig;
+    }
+
+    public function setCallbackFunc($callbackFunc)
+    {
+        $this->callbackFunc = $callbackFunc;
+    }
+
 }

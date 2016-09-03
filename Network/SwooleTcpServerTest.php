@@ -5,15 +5,14 @@
  * @date 2016年9月3日 21:04:11
  */
 namespace Menory\Network;
+// use \Menory\Network\SwooleBaseServer;
 
-use \Menory\Network\SwooleBaseServer;
-
-class SwooleTcpServer extends SwooleBaseServer
+class SwooleTcpServerTest extends \PHPUnit_Framework_TestCase // extends SwooleBaseServer
 {
     /**
-     * @todo
+     * @test
      */
-    public function run()
+    public function _run()
     {
         $swooleTcpServer = new \Swoole\Server('0.0.0.0', 9500);
 
@@ -24,6 +23,6 @@ class SwooleTcpServer extends SwooleBaseServer
 
     public function onReceive(\Swoole\Server $server, $fd, $fromId, $data)
     {
-        call_user_func($this->callbackFunc, $server, $fd, $fromId, $data);
+        var_dump($data);
     }
 }
